@@ -112,3 +112,24 @@ let ValamilyenFuggveny = () => {
     ....
     return ..;
 };*/
+
+function objectToArray(object) {
+
+}
+
+let object = {
+    //key (mindig string) : value
+    'Surname' : 'Kiss',
+    'First Name' : 'László',
+    'Date of birth' : 1998
+};
+
+//console.log(object.Surname + ' ' + object['First Name'] + ' ' + object['Date of birth']);
+
+let szoveg = '';
+
+for (let key in object) {
+    szoveg += `<br>${key} : ${object[key]}`;
+}
+
+document.getElementById('kiir').innerHTML = szoveg;
